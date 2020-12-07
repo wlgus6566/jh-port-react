@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jh-port-react/static/css/main.41814e0e.chunk.css",
+    "main.js": "/jh-port-react/static/js/main.32ebd9b1.chunk.js",
+    "main.js.map": "/jh-port-react/static/js/main.32ebd9b1.chunk.js.map",
+    "runtime-main.js": "/jh-port-react/static/js/runtime-main.345ddcb3.js",
+    "runtime-main.js.map": "/jh-port-react/static/js/runtime-main.345ddcb3.js.map",
+    "static/js/2.be4b3afb.chunk.js": "/jh-port-react/static/js/2.be4b3afb.chunk.js",
+    "static/js/2.be4b3afb.chunk.js.map": "/jh-port-react/static/js/2.be4b3afb.chunk.js.map",
+    "index.html": "/jh-port-react/index.html",
+    "static/css/main.41814e0e.chunk.css.map": "/jh-port-react/static/css/main.41814e0e.chunk.css.map",
+    "static/js/2.be4b3afb.chunk.js.LICENSE.txt": "/jh-port-react/static/js/2.be4b3afb.chunk.js.LICENSE.txt",
+    "static/media/Contact.scss": "/jh-port-react/static/media/contact_img.3934bb47.jpg",
+    "static/media/Website.scss": "/jh-port-react/static/media/website_standard.e45e0d92.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.345ddcb3.js",
+    "static/js/2.be4b3afb.chunk.js",
+    "static/css/main.41814e0e.chunk.css",
+    "static/js/main.32ebd9b1.chunk.js"
+  ]
+}

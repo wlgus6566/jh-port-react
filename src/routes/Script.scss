@@ -1,0 +1,90 @@
+.script_cont{
+	padding: 100px 8px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.script_cont .project{
+	width: 31%;
+	margin-bottom: 10%;
+}
+
+.script_cont .project a{
+	position: relative;
+	display: block;
+	z-index: 2;
+}
+
+.script_cont .project a::before{
+	content:'';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: #000;
+	z-index: 2;
+	transition: all 0.3s ease-in-out;
+}
+
+.script_cont .project a:hover::before{
+	opacity: 0.6;
+}
+
+.script_cont .project a .img{
+	position: relative;
+	overflow: hidden;
+}
+
+.script_cont .project a .img img{
+	width: 100%;
+}
+
+.script_cont .project a .img:before {
+  width: 60px; height: 1px; left: 100%;
+}
+
+.script_cont .project a .img:after {
+  width: 1px; height: 60px; top: 0%;
+}
+
+.script_cont .project a .img:before,
+.script_cont .project a .img:after {
+  content:'';
+  background: #fff;
+  position: absolute;
+  left: 50%; top: 50%;
+	opacity: 0;
+	z-index: 5;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+
+.script_cont .project:hover a .img:before, 
+.script_cont .project:hover a .img:after {
+  opacity: 1;
+	left: 50%; top: 50%;
+}
+
+.script_cont .project a .desc{
+	padding: 30px 30px 30px 12px;
+	font-family: "S-CoreDream-3Light";
+}
+
+.script_cont .project a .desc h3{
+	font-size: 25px;
+	font-family: "S-CoreDream-8Heavy";
+	font-weight: 800;
+	margin-bottom: 50px;
+}
+
+.script_cont .project a .desc p{
+	margin-bottom: 8px;
+}
+
+.script_cont .project a .desc p strong{
+	display: inline-block;
+	width: 20%;
+}

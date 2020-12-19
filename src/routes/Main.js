@@ -5,8 +5,8 @@ import './Main.scss';
 import Splitting from "splitting";
 
 
-// new Slideshow(document.querySelector('#main .slides'));
-// Splitting();
+new Slideshow(document.querySelector('#main .slides'));
+Splitting();
 
 function Main(){
   return (
@@ -17,11 +17,11 @@ function Main(){
           <div className="slides">
             <div className="slide slide--current">
               <div className="img_wrap">
-                <img className="img1" src="./img/main_1-1.jpg" alt="main_1-1"/>
-                <img className="img2" src="./img/main_1-2.jpg" alt="main_1-2"/>
+                <img className="img1" src="./images/main_1-1.jpg" alt="main_1-1"/>
+                <img className="img2" src="./images/main_1-2.jpg" alt="main_1-2"/>
                 <div className="break">break</div>
-                <img className="img3" src="./img/main_1-3.jpg" alt="main_1-3"/>
-                <img className="img4" src="./img/main_1-4.jpg" alt="main_1-4"/>
+                <img className="img3" src="./images/main_1-3.jpg" alt="main_1-3"/>
+                <img className="img4" src="./images/main_1-4.jpg" alt="main_1-4"/>
               </div>
               <h2 className="title">
                 <a href="#">
@@ -33,11 +33,11 @@ function Main(){
             </div>
             <div className="slide">
               <div className="img_wrap">
-                <img className="img1" src="./img/main_2-1.jpg" alt="main_2-1"/>
-                <img className="img2" src="./img/main_2-2.jpg" alt="main_2-1"/>
+                <img className="img1" src="./images/main_2-1.jpg" alt="main_2-1"/>
+                <img className="img2" src="./images/main_2-2.jpg" alt="main_2-1"/>
                 <div className="break">break</div>
-                <img className="img3" src="./img/main_2-3.jpg" alt="main_1-1"/>
-                <img className="img4" src="./img/main_2-4.jpg" alt="main_1-1"/>
+                <img className="img3" src="./images/main_2-3.jpg" alt="main_1-1"/>
+                <img className="img4" src="./images/main_2-4.jpg" alt="main_1-1"/>
               </div>
               <h2 className="title">
                 <a href="#">
@@ -49,11 +49,11 @@ function Main(){
             </div>
             <div className="slide">
               <div className="img_wrap">
-                <img className="img1" src="./img/main_3-2.jpg" alt="main_1-1"/>
-                <img className="img2" src="./img/main_3-1.jpg" alt="main_1-1"/>
+                <img className="img1" src="./images/main_3-2.jpg" alt="main_1-1"/>
+                <img className="img2" src="./images/main_3-1.jpg" alt="main_1-1"/>
                 <div className="break">break</div>
-                <img className="img3" src="./img/main_3-3.jpg" alt="main_1-1"/>
-                <img className="img4" src="./img/main_3-4.jpg" alt="main_1-1"/>
+                <img className="img3" src="./images/main_3-3.jpg" alt="main_1-1"/>
+                <img className="img4" src="./images/main_3-4.jpg" alt="main_1-1"/>
               </div>
               <h2 className= "title">
                 <a href="#">
@@ -65,11 +65,11 @@ function Main(){
             </div>
             <div className="slide">
               <div className="img_wrap">
-                <img className="img1" src="./img/main_4-1.jpg" alt="main_1-1"/>
-                <img className="img2" src="./img/main_4-2.jpg" alt="main_1-1"/>
+                <img className="img1" src="./images/main_4-1.jpg" alt="main_1-1"/>
+                <img className="img2" src="./images/main_4-2.jpg" alt="main_1-1"/>
                 <div className="break">break</div>
-                <img className="img3" src="./img/main_4-3.jpg" alt="main_1-1"/>
-                <img className="img4" src="./img/main_4-4.jpg" alt="main_1-1"/>
+                <img className="img3" src="./images/main_4-3.jpg" alt="main_1-1"/>
+                <img className="img4" src="./images/main_4-4.jpg" alt="main_1-1"/>
               </div>
               <h2 className="title">
                 <a href="#">
@@ -81,11 +81,11 @@ function Main(){
             </div>
             <div className="slide">
               <div className="img_wrap">
-                <img className="img1" src="./img/main_5-1.jpg" alt="main_1-1"/>
-                <img className="img2" src="./img/main_5-2.jpg" alt="main_1-1"/>
+                <img className="img1" src="./images/main_5-1.jpg" alt="main_1-1"/>
+                <img className="img2" src="./images/main_5-2.jpg" alt="main_1-1"/>
                 <div className="break">break</div>
-                <img className="img3" src="./img/main_5-3.jpg" alt="main_1-1"/>
-                <img className="img4" src="./img/main_5-4.jpg" alt="main_1-1"/>
+                <img className="img3" src="./images/main_5-3.jpg" alt="main_1-1"/>
+                <img className="img4" src="./images/main_5-4.jpg" alt="main_1-1"/>
               </div>
               <h2 className="title">
                 <a href="#">

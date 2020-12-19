@@ -63,11 +63,20 @@
   font-size: 25px;
   flex: 1;
 }
+
 .YoutubeHeader .logo{
   display: flex;
   align-items: center;
   margin-right: 1em;
 }
+
+.YoutubeHeader .logo .title{
+  font-family: "S-CoreDream-3Light";
+  font-weight: 900;
+  font-size: 20px;
+  padding-left: 0.5em;
+}
+
 .YoutubeHeader .input{
   width: 30%;
   font-size: 1.2rem;

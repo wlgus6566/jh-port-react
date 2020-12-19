@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/jh-port-react/static/css/main.79e495ff.chunk.css",
-    "main.js": "/jh-port-react/static/js/main.7b6919df.chunk.js",
-    "main.js.map": "/jh-port-react/static/js/main.7b6919df.chunk.js.map",
+    "main.css": "/jh-port-react/static/css/main.b8c6f53c.chunk.css",
+    "main.js": "/jh-port-react/static/js/main.c0f79557.chunk.js",
+    "main.js.map": "/jh-port-react/static/js/main.c0f79557.chunk.js.map",
     "runtime-main.js": "/jh-port-react/static/js/runtime-main.345ddcb3.js",
     "runtime-main.js.map": "/jh-port-react/static/js/runtime-main.345ddcb3.js.map",
     "static/js/2.d5688d7e.chunk.js": "/jh-port-react/static/js/2.d5688d7e.chunk.js",
     "static/js/2.d5688d7e.chunk.js.map": "/jh-port-react/static/js/2.d5688d7e.chunk.js.map",
     "index.html": "/jh-port-react/index.html",
-    "static/css/main.79e495ff.chunk.css.map": "/jh-port-react/static/css/main.79e495ff.chunk.css.map",
+    "static/css/main.b8c6f53c.chunk.css.map": "/jh-port-react/static/css/main.b8c6f53c.chunk.css.map",
     "static/js/2.d5688d7e.chunk.js.LICENSE.txt": "/jh-port-react/static/js/2.d5688d7e.chunk.js.LICENSE.txt",
     "static/media/Contact.scss": "/jh-port-react/static/media/contact_img.3934bb47.jpg",
     "static/media/Website.scss": "/jh-port-react/static/media/website_standard.e45e0d92.jpg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.345ddcb3.js",
     "static/js/2.d5688d7e.chunk.js",
-    "static/css/main.79e495ff.chunk.css",
-    "static/js/main.7b6919df.chunk.js"
+    "static/css/main.b8c6f53c.chunk.css",
+    "static/js/main.c0f79557.chunk.js"
   ]
 }

@@ -17,6 +17,7 @@ function Header({color}){
                 <li><Link to = "/about">About</Link></li>
                 <li><Link to = "/website">Website</Link></li>
                 <li><Link to = "/script">Script</Link></li>
+                <li><Link to = "/youtube">Youtube</Link></li>
                 <li><Link to = "/contact">Contact</Link></li>
             </ul>
         </nav>

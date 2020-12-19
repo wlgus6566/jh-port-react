@@ -1,0 +1,159 @@
+
+
+
+
+.youtube-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+#youtube .bigTitle{
+  margin-bottom: 80px;
+}
+#youtube .subTitle{
+  font-size: 3vw;
+  margin: 50px 10px;
+}
+#youtube .list{
+  display: flex;
+  width: 100%;
+}
+#youtube .list .detail{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 70% 1;
+  flex-direction: column;
+}
+#youtube .list .videos.list{
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#youtube .list .videos.grid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#youtube .list .videos.grid .grid{
+  padding: 1em;
+  width: 33.3333%;
+}
+#youtube .list .videos.full{
+  width: 30%;
+}
+#youtube .list .videos.full .full{
+  width: 100%;
+}
+// video detail
+.detail{
+  padding: 0.2em;
+}
+.description{
+  white-space: pre-wrap;
+}
+
+// header
+.YoutubeHeader{
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  padding: 0.8em 1rem;
+  color: #fff;
+}
+.YoutubeHeader .subText{
+  font-size: 25px;
+  flex: 1;
+}
+.YoutubeHeader .logo{
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+.YoutubeHeader .input{
+  width: 30%;
+  font-size: 1.2rem;
+  outline: none;
+}
+.YoutubeHeader .button{
+  background-color: darkgray;
+  border:0;
+}
+.YoutubeHeader .buttonImg{
+  padding: 0.5em 0.2em;
+  height: 100%;
+}
+
+// video item
+
+.grid{
+  width: 33%;
+  padding: 0.2em;
+}
+.full{
+  width: 100%;
+  padding: 0.2em;
+}
+.grid .video{    
+  width: 100%;
+  border: 1px solid #4b4b4b;
+}
+.full .video{
+  display: flex;
+  margin-bottom: 0.8em;
+}
+.full .video .thumbnail{
+  width: 40%;
+}
+.full .video .metadata{
+  padding: 0 0.5em;
+  height: auto;
+}
+.list .detail{
+  font-family: "S-CoreDream-3Light";
+  line-height: 1.5;
+}
+.list .detail > h2{
+  font-size: 30px;
+  margin: 20px 0;
+}
+.list .detail > h3{
+  font-size: 20px;
+}
+.video:hover{
+  transform:scale(1.02);
+}
+.thumbnail{
+  width: 100%;
+}
+.metadata{
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+}
+.full .metadata .title {
+  font-size: 20px;
+}
+.metadata .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+.metadata .title, .channel{
+  margin-bottom: 1em;
+  font-size: 22px;
+  font-family: "S-CoreDream-3Light";
+}
+.channel{
+  font-size: 17px;
+}
+
+
+@media screen and (max-width: 768px){
+  .app .content{
+    flex-direction: column;
+  }
+}

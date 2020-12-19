@@ -38,31 +38,41 @@
 .web_cont .project .left .img .img_bg{
 	padding-top: 100%;
 	text-indent: -9999em;
-	background: url(../img/website_standard.jpg) center/cover;
+	background: url(../../img/website_standard.jpg) center/cover;
 }
 
-.web_cont .project .left .img.mega .img_bg{
-	background: url(../img/website_megabox.jpg) center/cover;
+.web_cont .project .left .img.Standard .img_bg{
+	padding-top: 100%;
+	text-indent: -9999em;
+	background: url(../../img/website_standard.jpg) center/cover;
 }
 
-.web_cont .project .left .img.bakery .img_bg{
-	background: url(../img/website_bakery.jpg) center/cover;
+.web_cont .project .left .img.Megabox .img_bg{
+	background: url(../../img/website_megabox.jpg) center/cover;
 }
 
-.web_cont .project .left .img.apple .img_bg{
-	background: url(../img/website_apple.jpg) center/cover;
+.web_cont .project .left .img.Bakery .img_bg{
+	background: url(../../img/website_bakery.jpg) center/cover;
 }
 
-.web_cont .project .left .img.inno .img_bg{
-	background: url(../img/website_innotech.jpg) center/cover;
+.web_cont .project .left .img.Apple .img_bg{
+	background: url(../../img/website_apple.jpg) center/cover;
 }
 
-.web_cont .project .left .img.pepsi .img_bg{
-	background: url(../img/website_pepsi.jpg) center/cover;
+.web_cont .project .left .img.Innotech .img_bg{
+	background: url(../../img/website_innotech.jpg) center/cover;
 }
 
-.web_cont .project .left .img.hotel .img_bg{
-	background: url(../img/website_hotel.jpg) center/cover;
+.web_cont .project .left .img.Architect .img_bg{
+	background: url(../../img/website_arch.jpg) center/cover;
+}
+
+.web_cont .project .left .img.Pepsi .img_bg{
+	background: url(../../img/website_pepsi.jpg) center/cover;
+}
+
+.web_cont .project .left .img.Hotel .img_bg{
+	background: url(../../img/website_hotel.jpg) center/cover;
 }
 
 .web_cont .project .right{

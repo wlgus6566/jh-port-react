@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import './About.scss';
-import {TweenMax} from "gsap";
-import $ from "jquery";
+// import {TweenMax} from "gsap";
 
 function AboutText({title,slogan}){
   return (
@@ -39,7 +38,7 @@ function About(){
               </ul>
               <div className="image-container">
                 {aboutMe.map((txt) => (
-                  <AboutImg imgurl={txt.imgurl} title={txt.title}/>
+                  <AboutImg key={txt.id} imgurl={txt.imgurl} title={txt.title}/>
                 ))}
               </div>
             </div>
@@ -48,26 +47,7 @@ function About(){
   )
 }
 
-// about 애니메이션
-$('.about li').each(function(){
-  $(this).on('mouseover', function() {
-    alert($(this));
-    $('.image-container .image').removeClass('visible');
-    $(this).addClass('hovered');
-    $(this).addClass('visible');
-    
-  }).on('mousemove', function(e) {
-    let imgWidth = $(this).outerWidth();
-    let imgHeight = $(this).outerHeight();
-    TweenMax.to($('.image-container'), .5, {
-      left: e.clientX - (imgWidth / 2),
-      top: e.clientY - (imgHeight / 2)
-    });
-    
-  }).on('mouseleave', function() {
-    $(this).removeClass('hovered');
-  });
-});
+
 
 const aboutMe = [
   {
@@ -112,13 +92,13 @@ const aboutMe = [
     imgurl: 'https://images.unsplash.com/photo-1565623513508-ffe2588e327c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80',
   }, {
     id: '9',
-    title: 'The Art of Food',
+    title: '',
     slogan: 'Lorem ipsum dolor',
     imgurl: 'https://images.unsplash.com/photo-1565676137134-10420000e371?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80',
   }, {
     id: '10',
-    title: 'The Art of Food',
-    slogan: 'Lorem ipsum dolor',
+    title: 'I Love Food',
+    slogan: 'love eating',
     imgurl: 'https://images.unsplash.com/photo-1565676137134-10420000e371?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80',
   }, {
     id: '11',
@@ -158,4 +138,34 @@ const aboutMe = [
   }
 ];
 
+
 export default About;
+
+// const $aboutList = document.querySelectorAll('.about li');
+
+
+// $aboutList.forEach(function(item, index){
+
+//   item.addEventListener('click',function(){
+//     console.log(item,index);
+    // document.querySelectorAll('.image-container .image').classList.remove('visible');
+    // document.querySelectorAll('.image-container .image')[index].classList.add('hovered');
+    // document.querySelectorAll('.image-container .image')[index].classList.add('visible');
+  // });
+
+  // item.addEventListener('mousemove',function(e){
+  //   let imgWidth = this.outerWidth;
+  //   let imgHeight = this.outerHeight;
+
+  //   TweenMax.to(document.querySelector('.image-container'), .5, {
+  //     left: e.clientX - (imgWidth / 2),
+  //     top: e.clientY - (imgHeight / 2)
+  //   });
+
+  // });
+
+  // item.addEventListener('mouseleave',function(){
+  //   this.classList.remove('hovered');
+  // });
+
+// });

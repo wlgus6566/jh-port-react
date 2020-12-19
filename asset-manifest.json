@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/jh-port-react/static/css/main.1b61596c.chunk.css",
-    "main.js": "/jh-port-react/static/js/main.26d7a85e.chunk.js",
-    "main.js.map": "/jh-port-react/static/js/main.26d7a85e.chunk.js.map",
+    "main.js": "/jh-port-react/static/js/main.8142b5e2.chunk.js",
+    "main.js.map": "/jh-port-react/static/js/main.8142b5e2.chunk.js.map",
     "runtime-main.js": "/jh-port-react/static/js/runtime-main.345ddcb3.js",
     "runtime-main.js.map": "/jh-port-react/static/js/runtime-main.345ddcb3.js.map",
-    "static/js/2.d5688d7e.chunk.js": "/jh-port-react/static/js/2.d5688d7e.chunk.js",
-    "static/js/2.d5688d7e.chunk.js.map": "/jh-port-react/static/js/2.d5688d7e.chunk.js.map",
+    "static/js/2.bcba90ba.chunk.js": "/jh-port-react/static/js/2.bcba90ba.chunk.js",
+    "static/js/2.bcba90ba.chunk.js.map": "/jh-port-react/static/js/2.bcba90ba.chunk.js.map",
     "index.html": "/jh-port-react/index.html",
     "static/css/main.1b61596c.chunk.css.map": "/jh-port-react/static/css/main.1b61596c.chunk.css.map",
-    "static/js/2.d5688d7e.chunk.js.LICENSE.txt": "/jh-port-react/static/js/2.d5688d7e.chunk.js.LICENSE.txt",
+    "static/js/2.bcba90ba.chunk.js.LICENSE.txt": "/jh-port-react/static/js/2.bcba90ba.chunk.js.LICENSE.txt",
     "static/media/Contact.scss": "/jh-port-react/static/media/contact_img.3934bb47.jpg",
     "static/media/Website.scss": "/jh-port-react/static/media/website_standard.e45e0d92.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.345ddcb3.js",
-    "static/js/2.d5688d7e.chunk.js",
+    "static/js/2.bcba90ba.chunk.js",
     "static/css/main.1b61596c.chunk.css",
-    "static/js/main.26d7a85e.chunk.js"
+    "static/js/main.8142b5e2.chunk.js"
   ]
 }

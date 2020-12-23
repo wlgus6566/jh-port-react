@@ -1,22 +1,17 @@
-import {gsap} from "gsap";
+import "splitting/dist/splitting.css";
+import "splitting/dist/splitting-cells.css";
+import { gsap } from 'gsap';
+import MainSlide from './MainSlide';
 
-
-class Slide {
-  constructor(el) {
-      this.DOM = {el: el};
-      this.DOM.chars = this.DOM.el.querySelectorAll('#main .word > .char');
-      this.DOM.imgs = this.DOM.el.querySelectorAll('.img_wrap > img');
-  }
-}
 export default class Slideshow  {
     constructor(el) {
         this.DOM = {el: el};
         this.DOM.navigation = {
-            prev: this.DOM.el.querySelector('.slides_nav.prev'),
-            next: this.DOM.el.querySelector('.slides_nav.next')
+            prev: this.DOM.el.querySelector('.prev'),
+            next: this.DOM.el.querySelector('.next')
         };
         this.slides = [];
-        [...this.DOM.el.querySelectorAll('.slide')].forEach(slide => this.slides.push(new Slide(slide)));
+        [...this.DOM.el.querySelectorAll('.slide')].forEach(slide => this.slides.push(new MainSlide(slide)));
 
         this.current = 0;
 

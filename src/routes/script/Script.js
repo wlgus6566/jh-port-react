@@ -1,88 +1,63 @@
 import React from 'react';
+import axios from 'axios';
 import Header from '../../components/Header';
 import './Script.scss';
 import ScriptList from './ScriptList';
+import Loading from '../../components/Loading';
 
+class Script extends React.Component {
+    state = {
+        isLoading: true,
+        script : []
+    }
 
-function Script(){
-  return (
-      <div id="wrap">
-        <Header/>
-        <section id="script">
-          <div className="container">
-            <h2 className="bigTitle">
-              <span>VALILLA JS</span>
-              <span>PROJECT</span>
-            </h2>
-            <ul className="script_cont">
-              {ScriptItem.map((item) => (
-                <ScriptList key={item.id} 
-                            title={item.title} 
-                            period={item.period} 
-                            imgurl={item.imgurl}  
-                            url={item.url}  
-                            imgurl={item.imgurl}  
-                            using={item.using}  
-                            etc={item.etc}
-                            />
-                ))}
-            </ul>
+    getLists = async () => {
+        const {
+            data : {
+                data: { script },
+            },
+        } = await axios.get("https://wlgus6566.github.io/json/script.json");
+        
+        this.setState({ script, isLoading: false });
+    }
+
+    componentDidMount(){
+        this.getLists();
+    }
+    
+    render() {
+      const { isLoading, script } = this.state;
+      return (
+          <div id="wrap">
+              <Header />
+              {isLoading ? (
+                  <Loading/>
+              ) : (
+                <section id="script">
+                  <div className="container">
+                    <h2 className="bigTitle">
+                      <span>VALILLA JS</span>
+                      <span>PROJECT</span>
+                    </h2>
+                    <ul className="script_cont">
+                      {script.map((item) => (
+                        <ScriptList key={item.id} 
+                                    title={item.title} 
+                                    period={item.period} 
+                                    url={item.url}  
+                                    imgurl={item.imgurl}  
+                                    using={item.using}  
+                                    etc={item.etc}
+                                    />
+                        ))}
+                    </ul>
+                  </div>
+                </section>
+              )}
+              {/* <Footer /> */}
           </div>
-        </section>
-      </div>
-  )
-}
-
-const ScriptItem = [
-  {
-    id: '1',
-    title: 'TO-DO-LIST',
-    period: '2020.09',
-    imgurl: './images/script_todolist.jpg',
-    url: 'http://wlgus6566.dothome.co.kr/todolist/index.html',
-    using: "html5/css3/javascript",
-    etc: 'weather api/local storage',
-  },{
-    id: '2',
-    title: 'CARROT-GAME',
-    period: '2020.10',
-    imgurl: './images/script_carrotgame.jpg',
-    url: 'http://wlgus6566.dothome.co.kr/todolist/index.html',
-    using: "html5/css3/javascript",
-    etc: 'weather api/local storage',
-  },{
-    id: '3',
-    title: 'FLIP-CARD-GAME',
-    period: '2020.10',
-    imgurl: './images/script_cardgame.jpg',
-    url: 'http://wlgus6566.dothome.co.kr/todolist/index.html',
-    using: "html5/css3/javascript",
-    etc: 'weather api/local storage',
-  },{
-    id: '4',
-    title: 'MUSIC-APP',
-    period: '2020.10',
-    imgurl: './images/script_music.jpg',
-    url: 'http://wlgus6566.dothome.co.kr/todolist/index.html',
-    using: "html5/css3/javascript",
-    etc: 'weather api/local storage',
-  },{
-    id: '5',
-    title: 'PAINT-BOARD',
-    period: '2020.10',
-    imgurl: './images/script_board.jpg',
-    url: 'http://wlgus6566.dothome.co.kr/todolist/index.html',
-    using: "html5/css3/javascript",
-    etc: 'weather api/local storage',
-  },{
-    id: '6',
-    title: 'APPLE-CLONE-SITE',
-    period: '2020.10',
-    imgurl: './images/script.jpg',
-    url: 'http://wlgus6566.dothome.co.kr/todolist/index.html',
-    using: "html5/css3/javascript",
-    etc: 'weather api/local storage',
+      )
   }
-];
+}
 
 export default Script;

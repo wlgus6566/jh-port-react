@@ -117,7 +117,7 @@
 }
 
 
-.slides .slides_nav {
+.slides button {
 	position: absolute;
 	top: 50%;
 	cursor: pointer;
@@ -132,24 +132,24 @@
 	transition: transform 0.2s ease-out;
 }
 
-.slides .slides_nav svg {
+.slides button svg {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
 
-.slides .slides_nav.prev {
+.slides button.prev {
 	left: 15vw;
 }
 
-.slides .slides_nav.prev:hover {
+.slides button.prev:hover {
 	transform: translate3d(-15%, 0, 0);
 }
 
-.slides .slides_nav.next {
+.slides button.next {
 	right: 15vw;
 }
 
-.slides .slides_nav.next:hover {
+.slides button.next:hover {
 	transform: translate3d(15%, 0, 0);
 }

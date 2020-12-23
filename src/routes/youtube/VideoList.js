@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import VideoItem from './VideoItem';
 import './Youtube.scss';
 
-const VideoList = ({videos, onVideoClick , display}) => {
+const VideoList = memo(({videos, onVideoClick , display}) => {
     const displayType = display === 'full' ? 'full' : 'grid';
     return (
         <ul className = {`videos ${displayType}`}>
@@ -14,6 +14,6 @@ const VideoList = ({videos, onVideoClick , display}) => {
                 display = {display}/>)}
         </ul>
     );
-}
-
+    }
+)
 export default VideoList;

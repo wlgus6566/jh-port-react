@@ -8,6 +8,7 @@
 }
 #youtube .bigTitle{
   margin-bottom: 80px;
+  cursor:pointer;
 }
 #youtube .subTitle{
   font-size: 3vw;
@@ -81,10 +82,13 @@
   width: 30%;
   font-size: 1.2rem;
   outline: none;
+  border-radius: 5px;
+  padding-left: 10px;
 }
 .YoutubeHeader .button{
-  background-color: darkgray;
-  border:0;
+  width: 62px;
+  border-radius: 5px;
+  background: #e22b2b;
 }
 .YoutubeHeader .buttonImg{
   padding: 0.5em 0.2em;

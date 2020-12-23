@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Main from './routes/Main';
-import About from './routes/About';
+import Main from './routes/main/Main';
+import About from './routes/about/About';
 import Website from './routes/website/Website';
 import Script from './routes/script/Script';
 

@@ -22,12 +22,12 @@ export function AboutImg({ image, title }){
 }
 
 AboutText.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
   title: PropTypes.string.isRequired,
   slogan: PropTypes.string.isRequired,
 } 
 AboutImg.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.number,
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 } 

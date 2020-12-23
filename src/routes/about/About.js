@@ -46,7 +46,7 @@ class About extends React.Component {
                         </ul>
                         <div className="image-container">
                             {about.map((txt) => (
-                            <AboutImg key={txt.id} imgurl={txt.image} title={txt.title}/>
+                            <AboutImg key={txt.id} image={txt.image} title={txt.title}/>
                             ))}
                         </div>
                   </div>
